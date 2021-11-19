@@ -1,0 +1,17 @@
+</html>
+<script type="text/javascript">
+let i = 0;
+window.setInterval(() => {
+    for(let b of document.getElementById('l').children) {
+        b.style.color = 'black';
+    }
+    document.getElementById('l').children[i++].style.color = 'red';
+    i == 3 ? i = 0 : i = i;
+},500)
+</script>
+    <div id='l'>
+        <span>-</span>
+        <span>-</span>
+        <span>-</span>
+    </div>
+</html>

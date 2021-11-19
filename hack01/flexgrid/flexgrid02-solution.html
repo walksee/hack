@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="flexgrid.css">
+<script type="text/javascript">
+'use strict';
+/*//
+#============================================================#
+#                                                            #
+#                    _,---''''''---,_                        #
+#                 ,-'                '-.                     #
+#              .-'                      '-.                  #
+#            ,'                            '.                #
+#           /                                \               #
+#         ,'         +--------------+         ',             #
+#        /           |              |           \            #
+#       ,            |              |            ,           #
+#       |            |              |            |           #
+#      .             |              |             .          #
+#      |             |              |             |          #
+#      |             |              |             |          #
+#      '             |              |             '          #
+#       |            |              |            |           #
+#       '            |              |            '           #
+#        \           |              |           /            #
+#         '.         +--------------+         ,'             #
+#           \                                /               #
+#            '.                            ,'                #
+#              '-.                      .-'                  #
+#                 '-._              _,-'                     #
+#                     '---......---'                         #
+#        __        __    _ _     ____          (r)           #
+#        \ \      / /_ _| | | __/ ___|  ___  ___             #
+#         \ \ /\ / / _` | | |/ /\___ \ / _ \/ _ \            #
+#          \ V  V / (_| | |   <  ___) |  __/  __/            #
+#           \_/\_/ \__,_|_|_|\_\|____/ \___|\___|            #
+#                                                            #
+#============================================================#
+# Contacts: Krzysztof Wegner                                 #
+#============================================================#
+#                                                            #
+#            Copyright (c) 2020 Walksee sp. z o.o.           #
+#                  All rights reserved                       #
+#                                                            #
+# Address:                                                   #
+#   Walksee sp. z o.o.,                                      #
+#   ul. Matejki 2/4,                                         #
+#   60-766 Poznan, Poland                                    #
+#                                                            #
+#============================================================#
+//*/
+
+</script>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #3E3E3D;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  main article {
+    min-height: 60vh;
+  }
+  main aside {
+    background: hsl(190, 100%, 25%);;
+    flex: 1;
+  }
+  header, footer {
+    background: hsl(190, 100%, 55%);
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+</style>
+</head>
+<body>
+  <nav class="col-1">Nav</nav>
+  <div class="col-2">
+  	<header>Header</header>
+    <main>
+      <div class="inner-col">
+    	<article>Article</article>
+  		<footer>Footer</footer>
+      </div>
+    	<aside>Aside</aside>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css.css">
+<script type="text/javascript">
+'use strict';
+/*//
+#============================================================#
+#                                                            #
+#                    _,---''''''---,_                        #
+#                 ,-'                '-.                     #
+#              .-'                      '-.                  #
+#            ,'                            '.                #
+#           /                                \               #
+#         ,'         +--------------+         ',             #
+#        /           |              |           \            #
+#       ,            |              |            ,           #
+#       |            |              |            |           #
+#      .             |              |             .          #
+#      |             |              |             |          #
+#      |             |              |             |          #
+#      '             |              |             '          #
+#       |            |              |            |           #
+#       '            |              |            '           #
+#        \           |              |           /            #
+#         '.         +--------------+         ,'             #
+#           \                                /               #
+#            '.                            ,'                #
+#              '-.                      .-'                  #
+#                 '-._              _,-'                     #
+#                     '---......---'                         #
+#        __        __    _ _     ____          (r)           #
+#        \ \      / /_ _| | | __/ ___|  ___  ___             #
+#         \ \ /\ / / _` | | |/ /\___ \ / _ \/ _ \            #
+#          \ V  V / (_| | |   <  ___) |  __/  __/            #
+#           \_/\_/ \__,_|_|_|\_\|____/ \___|\___|            #
+#                                                            #
+#============================================================#
+# Contacts: Krzysztof Wegner                                 #
+#============================================================#
+#                                                            #
+#            Copyright (c) 2020 Walksee sp. z o.o.           #
+#                  All rights reserved                       #
+#                                                            #
+# Address:                                                   #
+#   Walksee sp. z o.o.,                                      #
+#   ul. Matejki 2/4,                                         #
+#   60-766 Poznan, Poland                                    #
+#                                                            #
+#============================================================#
+//*/
+
+</script>
+<style>
+  #walkseetarget {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #walkseetarget  div {
+    box-sizing: border-box;
+  }
+  #walkseetarget > div {
+    --ring-size: 300;
+    --border-size:10;
+    --border-color: white;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    background-color: hsl(190, 100%, 55%);
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  #walkseetarget > div > div:nth-child(1){
+    border-radius: 400px;
+    width: calc(var(--ring-size) * 1px);
+    height: calc(var(--ring-size) * 1px);
+    background-color: transparent;
+    border: calc(var(--border-size) * 1px) solid var(--border-color);
+    position: absolute;
+    left: calc(50px - var(--border-size) / 2 * 1px);
+    top: calc((200 - var(--ring-size)) / 2 * 1px);
+  }
+  #walkseetarget > div > div:nth-child(2){
+    border-radius: 0px;
+    width: 0px;
+    height: 200px;
+    background-color: transparent;
+    border: calc(var(--border-size) / 2 * 1px) solid var(--border-color);
+    position: absolute;
+    left: calc(100px - var(--border-size) / 2 * 1px);
+    top: 0px;
+  }
+  #walkseetarget > div > div:nth-child(3){
+    border-radius: 400px;
+    width: calc(var(--ring-size) * 1px);
+    height: calc(var(--ring-size) * 1px);
+    background-color: transparent;
+    border: calc(var(--border-size) * 1px) solid var(--border-color);
+    position: absolute;
+    left: calc(50px + var(--border-size) / 2 * 1px - 200px);
+    top: calc((200 - var(--ring-size)) / 2 * 1px);
+  }
+  #walkseetarget > div > div:nth-child(4){
+    border-radius: 0px;
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    border: calc(var(--border-size) * 1px) solid var(--border-color);
+    position: absolute;
+    left: -50px;
+    top: 50px;
+  }
+  #walkseetarget > div > div:nth-child(5){
+    border-radius: 0px;
+    width: 300px;
+    height: 0px;
+    background-color: transparent;
+    border: calc(var(--border-size) / 2 * 1px) solid var(--border-color);
+    position: absolute;
+    left: -50px;
+    top: calc(100px - var(--border-size) / 2 * 1px);
+  }
+</style>
+</head>
+<body>
+  <div id="walkseetarget">
+    <div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+</body>
+</html>

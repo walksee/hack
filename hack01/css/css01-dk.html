@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+'use strict';
+/*//
+#============================================================#
+#                                                            #
+#                    _,---''''''---,_                        #
+#                 ,-'                '-.                     #
+#              .-'                      '-.                  #
+#            ,'                            '.                #
+#           /                                \               #
+#         ,'         +--------------+         ',             #
+#        /           |              |           \            #
+#       ,            |              |            ,           #
+#       |            |              |            |           #
+#      .             |              |             .          #
+#      |             |              |             |          #
+#      |             |              |             |          #
+#      '             |              |             '          #
+#       |            |              |            |           #
+#       '            |              |            '           #
+#        \           |              |           /            #
+#         '.         +--------------+         ,'             #
+#           \                                /               #
+#            '.                            ,'                #
+#              '-.                      .-'                  #
+#                 '-._              _,-'                     #
+#                     '---......---'                         #
+#        __        __    _ _     ____          (r)           #
+#        \ \      / /_ _| | | __/ ___|  ___  ___             #
+#         \ \ /\ / / _` | | |/ /\___ \ / _ \/ _ \            #
+#          \ V  V / (_| | |   <  ___) |  __/  __/            #
+#           \_/\_/ \__,_|_|_|\_\|____/ \___|\___|            #
+#                                                            #
+#============================================================#
+# Contacts: Krzysztof Wegner                                 #
+#============================================================#
+#                                                            #
+#            Copyright (c) 2020 Walksee sp. z o.o.           #
+#                  All rights reserved                       #
+#                                                            #
+# Address:                                                   #
+#   Walksee sp. z o.o.,                                      #
+#   ul. Matejki 2/4,                                         #
+#   60-766 Poznan, Poland                                    #
+#                                                            #
+#============================================================#
+//*/
+
+</script>
+<style>
+  #wrapper {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: white;
+  }
+  #circle {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #006a80;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    z-index: 1;
+  }
+  #circle1 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #1ad9ff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, 0%);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    border-top-left-radius: 100%;
+    z-index: 2;
+  }
+  #circle2 {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #1ad9ff;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%, -100%);
+    border-radius: 100%;
+    z-index: 0;
+  }
+</style>
+</head>
+<body>
+  <div id="walkseetarget">
+    <img src="css01.png">
+  </div>
+  <div id="wrapper">
+    <div id="circle"></div>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+  </div>
+</body>
+</html>
